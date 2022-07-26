@@ -14,7 +14,7 @@ import {SubscriptionPostRouter} from "./src/routes/subscriptionRoutes/post";
 import {getSubscriptionRouter} from "./src/routes/subscriptionRoutes/get";
 import {deleteSubscriptionRouter} from "./src/routes/subscriptionRoutes/delete";
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 env.config();
