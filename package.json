@@ -31,6 +31,5 @@
   "engines": {
     "node": "16.13.2",
     "npm": "8.14.0"
-  },
-  "type": "module"
+  }
 }
