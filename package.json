@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nodemon index.ts",
     "run": "nodemon index.ts",
-    "start": "node index.ts"
+    "start": "node index"
   },
   "keywords": [],
   "author": "",
