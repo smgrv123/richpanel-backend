@@ -1,10 +1,10 @@
-import express from "express";
+const express = require("express");
 
-import subscriptionSchema from "../../schema/subscriptionSchema";
+const subscriptionSchema =require("../../schema/subscriptionSchema")
 
-const router = express.Router();
+const deleteSubscriptionRouter = express.Router();
 
-router.delete("/", async (req, res) => {
+deleteSubscriptionRouter.delete("/", async (req, res) => {
   try {
     const deleted = await subscriptionSchema.deleteOne({email: req.body.email });
     res.json({
@@ -16,4 +16,4 @@ router.delete("/", async (req, res) => {
   }
 });
 
-export { router as deleteSubscriptionRouter }; 
+module.exports = deleteSubscriptionRouter;

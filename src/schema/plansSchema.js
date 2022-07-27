@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const plansSchema = new mongoose.Schema({
   planName: {
@@ -31,4 +31,4 @@ const plansSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("plans", plansSchema);
+module.exports = mongoose.model("plans", plansSchema);
